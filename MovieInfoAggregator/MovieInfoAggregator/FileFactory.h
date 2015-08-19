@@ -12,6 +12,7 @@
 @interface FileFactory : NSObject
 
 @property id <FileGeneratorProtocol> fileDelegate;
+@property NSMutableArray *fileGenerators;
 
 - (void)start;
 

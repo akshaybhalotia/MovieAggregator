@@ -18,8 +18,6 @@ static NSString *const VALUE_NOT_PROVIDED = @"Value not provided";
 
 @interface FileFactory ()
 
-@property NSMutableArray *fileGenerators;
-
 @end
 
 @implementation FileFactory

@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "FileFactory.h"
+#import "PluginManager.h"
 
 @interface AppDelegate ()
 
@@ -18,7 +19,11 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
+    PluginManager *plugin = [PluginManager new];
+    NSArray *plugins = [plugin findPlugins];
+    
     FileFactory *myFileGen = [FileFactory new];
+    myFileGen.fileGenerators = [plugins mutableCopy];
     [myFileGen start];
 }
 

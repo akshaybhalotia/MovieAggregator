@@ -16,6 +16,7 @@
 		8463AF771B84F89400237F9D /* FileFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8463AF711B84F89400237F9D /* FileFactory.m */; };
 		8463AF781B84F89400237F9D /* TxtFileGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8463AF731B84F89400237F9D /* TxtFileGenerator.m */; };
 		8463AF791B84F89400237F9D /* PDFFileGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8463AF751B84F89400237F9D /* PDFFileGenerator.m */; };
+		8463AF7C1B84FC9A00237F9D /* PluginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8463AF7B1B84FC9A00237F9D /* PluginManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		8463AF731B84F89400237F9D /* TxtFileGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TxtFileGenerator.m; sourceTree = "<group>"; };
 		8463AF741B84F89400237F9D /* PDFFileGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFFileGenerator.h; sourceTree = "<group>"; };
 		8463AF751B84F89400237F9D /* PDFFileGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFFileGenerator.m; sourceTree = "<group>"; };
+		8463AF7A1B84FC9A00237F9D /* PluginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluginManager.h; sourceTree = "<group>"; };
+		8463AF7B1B84FC9A00237F9D /* PluginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PluginManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +94,8 @@
 			children = (
 				8463AF4F1B84F6D900237F9D /* AppDelegate.h */,
 				8463AF501B84F6D900237F9D /* AppDelegate.m */,
+				8463AF7A1B84FC9A00237F9D /* PluginManager.h */,
+				8463AF7B1B84FC9A00237F9D /* PluginManager.m */,
 				8463AF6D1B84F89400237F9D /* FileGeneratorProtocol.h */,
 				8463AF6E1B84F89400237F9D /* MovieInfo.h */,
 				8463AF6F1B84F89400237F9D /* MovieInfo.m */,
@@ -236,6 +241,7 @@
 				8463AF771B84F89400237F9D /* FileFactory.m in Sources */,
 				8463AF781B84F89400237F9D /* TxtFileGenerator.m in Sources */,
 				8463AF531B84F6D900237F9D /* main.m in Sources */,
+				8463AF7C1B84FC9A00237F9D /* PluginManager.m in Sources */,
 				8463AF511B84F6D900237F9D /* AppDelegate.m in Sources */,
 				8463AF761B84F89400237F9D /* MovieInfo.m in Sources */,
 			);

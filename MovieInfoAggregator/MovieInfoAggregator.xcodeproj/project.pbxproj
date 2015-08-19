@@ -12,6 +12,10 @@
 		8463AF551B84F6D900237F9D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8463AF541B84F6D900237F9D /* Images.xcassets */; };
 		8463AF581B84F6D900237F9D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8463AF561B84F6D900237F9D /* MainMenu.xib */; };
 		8463AF641B84F6D900237F9D /* MovieInfoAggregatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8463AF631B84F6D900237F9D /* MovieInfoAggregatorTests.m */; };
+		8463AF761B84F89400237F9D /* MovieInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8463AF6F1B84F89400237F9D /* MovieInfo.m */; };
+		8463AF771B84F89400237F9D /* FileFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8463AF711B84F89400237F9D /* FileFactory.m */; };
+		8463AF781B84F89400237F9D /* TxtFileGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8463AF731B84F89400237F9D /* TxtFileGenerator.m */; };
+		8463AF791B84F89400237F9D /* PDFFileGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8463AF751B84F89400237F9D /* PDFFileGenerator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,15 @@
 		8463AF5D1B84F6D900237F9D /* MovieInfoAggregatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieInfoAggregatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8463AF621B84F6D900237F9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8463AF631B84F6D900237F9D /* MovieInfoAggregatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieInfoAggregatorTests.m; sourceTree = "<group>"; };
+		8463AF6D1B84F89400237F9D /* FileGeneratorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileGeneratorProtocol.h; sourceTree = "<group>"; };
+		8463AF6E1B84F89400237F9D /* MovieInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieInfo.h; sourceTree = "<group>"; };
+		8463AF6F1B84F89400237F9D /* MovieInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieInfo.m; sourceTree = "<group>"; };
+		8463AF701B84F89400237F9D /* FileFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileFactory.h; sourceTree = "<group>"; };
+		8463AF711B84F89400237F9D /* FileFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileFactory.m; sourceTree = "<group>"; };
+		8463AF721B84F89400237F9D /* TxtFileGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TxtFileGenerator.h; sourceTree = "<group>"; };
+		8463AF731B84F89400237F9D /* TxtFileGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TxtFileGenerator.m; sourceTree = "<group>"; };
+		8463AF741B84F89400237F9D /* PDFFileGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFFileGenerator.h; sourceTree = "<group>"; };
+		8463AF751B84F89400237F9D /* PDFFileGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFFileGenerator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +91,15 @@
 			children = (
 				8463AF4F1B84F6D900237F9D /* AppDelegate.h */,
 				8463AF501B84F6D900237F9D /* AppDelegate.m */,
+				8463AF6D1B84F89400237F9D /* FileGeneratorProtocol.h */,
+				8463AF6E1B84F89400237F9D /* MovieInfo.h */,
+				8463AF6F1B84F89400237F9D /* MovieInfo.m */,
+				8463AF701B84F89400237F9D /* FileFactory.h */,
+				8463AF711B84F89400237F9D /* FileFactory.m */,
+				8463AF721B84F89400237F9D /* TxtFileGenerator.h */,
+				8463AF731B84F89400237F9D /* TxtFileGenerator.m */,
+				8463AF741B84F89400237F9D /* PDFFileGenerator.h */,
+				8463AF751B84F89400237F9D /* PDFFileGenerator.m */,
 				8463AF541B84F6D900237F9D /* Images.xcassets */,
 				8463AF561B84F6D900237F9D /* MainMenu.xib */,
 				8463AF4D1B84F6D900237F9D /* Supporting Files */,
@@ -210,8 +232,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8463AF791B84F89400237F9D /* PDFFileGenerator.m in Sources */,
+				8463AF771B84F89400237F9D /* FileFactory.m in Sources */,
+				8463AF781B84F89400237F9D /* TxtFileGenerator.m in Sources */,
 				8463AF531B84F6D900237F9D /* main.m in Sources */,
 				8463AF511B84F6D900237F9D /* AppDelegate.m in Sources */,
+				8463AF761B84F89400237F9D /* MovieInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

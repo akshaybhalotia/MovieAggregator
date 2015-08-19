@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "FileFactory.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,8 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
+    FileFactory *myFileGen = [FileFactory new];
+    [myFileGen start];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
